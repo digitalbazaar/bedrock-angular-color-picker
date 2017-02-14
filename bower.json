@@ -1,0 +1,13 @@
+{
+  "name": "bedrock-angular-color-picker",
+  "main": "./main.js",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [],
+  "dependencies": {
+    "bedrock-angular": "^2.0.0",
+    "angular-color-picker": "^1.0.10",
+    "bedrock-angular-form": "^2.12.0"
+  }
+}

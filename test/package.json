@@ -1,0 +1,21 @@
+{
+  "name": "bedrock-angular-color-picker-test",
+  "version": "0.0.1-0",
+  "private": true,
+  "scripts": {
+    "start": "node --preserve-symlinks test.js",
+    "test": "node --preserve-symlinks test.js test --framework protractor",
+    "postinstall": "bower install && node --preserve-symlinks test compile-less"
+  },
+  "dependencies": {
+    "bedrock": "^1.0.0",
+    "bedrock-docs": "^2.0.2",
+    "bedrock-express": "^2.0.6",
+    "bedrock-protractor": "^3.3.0",
+    "bedrock-requirejs": "^2.1.0",
+    "bedrock-server": "^2.1.3",
+    "bedrock-test": "^1.1.1",
+    "bedrock-validation": "^2.2.1",
+    "bedrock-views": "^4.0.0"
+  }
+}
