@@ -1,6 +1,7 @@
 /*!
  * Copyright (c) 2017 Digital Bazaar, Inc. All rights reserved.
  */
+/* global requirejs */
 define([], function() {
 
 'use strict';

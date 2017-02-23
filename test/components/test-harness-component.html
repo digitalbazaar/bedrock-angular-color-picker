@@ -1,16 +1,20 @@
 <div class="row">
-  <br-color-picker
-    ng-model="$ctrl.color"
-    br-input-help-text="Pick your favorite color."
-    br-input-options="{
-      name: 'color-picker-input',
-      label: 'Background',
-      helpTogglePosition: 'label',
-      showValidation: false,
-      columns: {
-        label: 'col-sm-2',
-        input: 'col-sm-1',
-        help: 'col-sm-offset-1 col-sm-5'
-      }
-    }"></br-color-picker>
+  <form>
+    <fieldset>
+      <br-color-picker
+        ng-model="$ctrl.color"
+        br-input-help-text="Pick your favorite color."
+        br-input-options="{
+          name: 'color-picker-input',
+          label: 'Background Color',
+          helpTogglePosition: 'label',
+          showValidation: false,
+          columns: {
+            label: 'col-sm-2',
+            input: 'col-sm-2',
+            help: 'col-sm-offset-1 col-sm-5'
+          }
+        }"></br-color-picker>
+      </fieldset>
+    </form>
 </div>
