@@ -8,9 +8,12 @@ define([], function() {
 function register(module) {
   module.component('brColorPicker', {
     bindings: {
-      inputOptions: '<brInputOptions',
-      inputHelpText: '@?brInputHelpText',
+      options: '<brOptions',
       color: '=ngModel'
+    },
+    transclude: {
+      'br-color-picker-help': '?brColorPickerHelp',
+      'br-color-picker-validation-errors': '?brColorPickerValidationErrors'
     },
     controller: Ctrl,
     templateUrl: requirejs.toUrl(
@@ -21,12 +24,12 @@ function register(module) {
 /* @ngInject */
 function Ctrl() {
   var self = this;
-  self.display = {
-    picker: false
-  };
 
   self.$onInit = function() {
-    self.inputHelpText = self.inputHelpText || 'Pick a color.';
+    self.display = {
+      picker: false
+    };
+    console.log('self.options', self.options);
   };
 }
 

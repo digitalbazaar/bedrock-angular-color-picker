@@ -1,12 +1,13 @@
 <div>
-  <br-input br-model="$ctrl.color" br-options="$ctrl.inputOptions" br-input-autocomplete="off">
+  <br-input br-model="$ctrl.color" br-options="$ctrl.options.input" br-input-autocomplete="off">
     <br-input-help>
-      {{$ctrl.inputHelpText}}
+      <div ng-transclude="br-color-picker-help"></div>
     </br-input-help>
   </br-input>
   <button type="button" ng-click="$ctrl.display.picker=!$ctrl.display.picker" class="btn">
-    <span ng-style="{'background-color':$ctrl.color}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></button>
+    <span ng-style="{'background-color':$ctrl.color}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  </button>
 </div>
-<div ng-show="$ctrl.display.picker" class="br-fadein br-fadeout">
+<div ng-if="$ctrl.display.picker" class="br-fadein br-fadeout">
   <color-picker ng-model="$ctrl.color"></color-picker>
 </div>
