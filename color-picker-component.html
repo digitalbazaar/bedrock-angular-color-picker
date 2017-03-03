@@ -1,14 +1,15 @@
-<div>
-  <br-input br-model="$ctrl.color" br-options="$ctrl.inputOptions"
+<div style="position: relative">
+  <br-input
+    br-model="$ctrl.color" br-options="$ctrl.inputOptions"
     br-input-autocomplete="off">
     <br-input-help>
       {{$ctrl.inputHelpText}}
     </br-input-help>
   </br-input>
   <span ng-click="$ctrl.display.picker=!$ctrl.display.picker"
-    style="float: left; width: 33px; height: 33px; border: 2px solid #dddddd; border-radius: 100%; margin-left: 5px; cursor: pointer"
+    style="position: absolute; top: 0; right: 0; width: 33px; height: 33px; border: 2px solid #dddddd; border-radius: 100%; cursor: pointer"
     ng-style="{'background-color':$ctrl.color}"></span>
 </div>
-<div ng-show="$ctrl.display.picker" class="br-fadein br-fadeout">
+<div ng-show="$ctrl.display.picker" class="col-sm-offset-3 br-fadein br-fadeout">
   <color-picker ng-model="$ctrl.color"></color-picker>
 </div>
