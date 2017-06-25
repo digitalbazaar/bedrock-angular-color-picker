@@ -1,0 +1,25 @@
+{
+  "name": "bedrock-angular-color-picker",
+  "version": "0.0.1-0",
+  "description": "Bedrock AngularJS Color Picker.",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "~1.6.4",
+    "angular-color-picker": "^1.0.11",
+    "bedrock-angular-form": "^3.0.6"
+  },
+  "bedrock": {
+    "browserDependencies": "all",
+    "manifest": {
+      "angular-color-picker": {
+        "dependencies": {
+          "angular": "~1.6.4"
+        }
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/digitalbazaar/bedrock-angular-color-picker"
+  }
+}
