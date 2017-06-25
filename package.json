@@ -12,6 +12,7 @@
     "browserDependencies": "all",
     "manifest": {
       "angular-color-picker": {
+        "css": "angular-color-picker.css",
         "dependencies": {
           "angular": "~1.6.4"
         }
